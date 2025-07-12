@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="libaryGrid">
+    </div>
+    <button class="addBook">New Book</button>
+
+    <div id="popupOverlay"></div>
+    <div id="formPopup">
+        <form action="/submit" method="post">
+            <input type="text" id="inputAuthor" placeholder="Author">
+            <input type="number" id="inputYear" placeholder="Year" min="0">
+            <input type="text" id="inputBookName" placeholder="Book Name">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="libary.js"></script>
+</html>
