@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+    padding:20px 180px;
+    background-color: rgb(41, 36, 53);
+    color: white;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:120px 180px;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgb(41, 36, 53);
+    color:white;
+    gap: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+li {
+    color:#a2a2a2;
+    font-size: 20px;
+}
+
+.img {
+    width:500px;
+    height:220px;
+
+    background:#777;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+}
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:60px;
+    gap: 20px;
+}
+
+.c3-content-header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.c3-content div:first-child{
+    height:160px;
+    width:160px;
+    border:4px solid dodgerblue;
+    border-radius:12px;
+}
+
+.c3-content div:last-child {
+    text-align: center;
+    margin: 6px;
+}
+.container-4 {
+    padding:100px 250px;
+    align-items: center;
+    margin: auto;
+    background: #E5E7EB;
+}
+
+.c4-quote {
+    font-style: italic;
+    font-size: 36px;
+    color:#757070
+}
+
+.c4-quoter {
+    text-align: right;
+    font-weight: bold;
+}
+.container-5 {
+    display: flex;
+    flex-direction: row;
+    width:900px;
+    margin:80px auto;
+    padding:50px 100px;
+    justify-content:space-between;
+    align-items:center;
+    background:#3882f6;
+    border-radius:10px;
+}
+
+.footer {
+    padding:40px;
+    text-align:center;
+    background-color: rgb(41, 36, 53);
+    color: white;
+}
+
+.head-link {
+    display: flex;
+    flex-direction: row;
+    gap: -5 px;
+    list-style: none;
+}
+
+button {
+    background: #3882F6;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 32px;
+    color: white;
+    font-size: 16px;
+    font-weight:bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
