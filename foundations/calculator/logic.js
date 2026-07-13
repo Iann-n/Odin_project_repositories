@@ -45,7 +45,6 @@ function operator(num1, op, num2)
 let display = document.querySelector(".display");
 const buttons = document.querySelectorAll(".btn");
 
-// setting up dispatch function for each button
 buttons.forEach(element => {
     element.addEventListener("click", () => {
         if (element.classList.contains('clear'))
@@ -66,22 +65,16 @@ buttons.forEach(element => {
         else if (element.classList.contains("equals"))
         {
             const expression = display.textContent;
-
             const operatorIndex = expression.search(/[+\-×÷]/);
-
             const num1 = Number(expression.slice(0, operatorIndex));
-
             const operatorMap = {
                 "+": "+",
                 "−": "-",
                 "×": "*",
                 "÷": "/"
             };
-
             const op = operatorMap[expression[operatorIndex]];
-
             const num2 = Number(expression.slice(operatorIndex + 1));
-
             display.textContent = operator(num1, op, num2);
         }
         else 
